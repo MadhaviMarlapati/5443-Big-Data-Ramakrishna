@@ -179,14 +179,17 @@ Right now, AJAX and other web technologies tend to use JSON. YAML is currently b
 
 Using python  : 
 
-
-import json
+~~~
 import yaml
+import json
  
-str = '{ "foo": "bar" }'
-data = json.loads(str)
-yml = yaml.safe_dump(data)
+yml = """
+---
+  foo: bar
+"""
+data = yaml.load(yml)
+json = json.dumps(data)
  
-print(yml)
-
+print(json)
+~~~
 
