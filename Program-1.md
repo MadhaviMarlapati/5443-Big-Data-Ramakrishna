@@ -15,12 +15,47 @@ I would like to choose python.I would like to  convert yml to json .
 Because Python is an easy to use language which has awesome libraries that work very well . 
 And   yml is light-weight and well-suited for hierarchical data representation, it also has a compact syntax for relational data
 
-~~~ 
+in general, a JSON expression is going to be 30% smaller than "equivalent" XML. 
 
-csv to json python    :  
-~~~ 
+
+
+### YAML To JSON : 
+
+
+Technically YAML is a superset of JSON. This means that, in theory at least, a YAML parser can understand JSON, but not necessarily the other way around.
+
+In general, there are certain features have  YAML that are not available in JSON.
+
+As @jdupont pointed out, YAML is visually easier to look at. In fact the YAML homepage is itself valid YAML, yet it is easy for a human to read.
+YAML has the ability to reference other items within a YAML file using "anchors." Thus it can handle relational information as one might find in a MySQL database.
+YAML is more robust about embedding other serialization formats such as JSON or XML within a YAML file.
+Right now, AJAX and other web technologies tend to use JSON. YAML is currently being used more for offline data processes.
+
+
+
+
+### YAML To JSON Using python  : 
+
 ~~~
-1 ) 
+import yaml
+import json
+ 
+yml = """
+---
+  foo: bar
+"""
+data = yaml.load(yml)
+json = json.dumps(data)
+ 
+print(json)
+~~~
+
+
+
+###csv to json using  python    :  
+
+~~~
+ 
 import csv
 import json
 
@@ -32,7 +67,7 @@ reader = csv.DictReader( csvfile, fieldnames)
 for row in reader:
     json.dump(row, jsonfile)
     jsonfile.write('\n')
-~~~	
+
 Reference : 
 
 	http://stackoverflow.com/questions/19697846/python-csv-to-json
@@ -40,10 +75,11 @@ Reference :
 	
 ~~~
 
-sql to json 
 
-~~~ 
-python 
+
+### sql to json  using python 
+
+
 ~~~ 
 
 # DBtoJSON.py
@@ -98,27 +134,16 @@ except Exception, e:
     sys.exit(1)
 
 # EOF
-The program is self-contained; you don't even need to set up a database and a table and populate it beforehand; the code does that. You just run:
-python DBtoJSON.py
-And here is its output:
-DB data as a list with a dict per DB record:
-[{'date': u'2006-01-05', 'symbol': u'RHAT', 'trans': u'BUY', 'price': 35.0, 'qty
-': 100.0}, {'date': u'2007-02-06', 'symbol': u'ORCL', 'trans': u'SELL', 'price':
- 25.1, 'qty': 200.0}, {'date': u'2008-03-06', 'symbol': u'IBM', 'trans': u'HOLD'
-, 'price': 45.2, 'qty': 200.0}]
 
-DB data as a single JSON string:
-[{"date": "2006-01-05", "symbol": "RHAT", "trans": "BUY", "price": 35.0, "qty":
-100.0}, {"date": "2007-02-06", "symbol": "ORCL", "trans": "SELL", "price": 25.1,
- "qty": 200.0}, {"date": "2008-03-06", "symbol": "IBM", "trans": "HOLD", "price"
-: 45.2, "qty": 200.0}]
-~~~
 
 Reference : 
 http://jugad2.blogspot.com/2014/03/database-to-json-in-python.html
 
 ~~~
-php  
+
+
+
+### sql to json  using php 
 ~~~
 
 $result = mysql_query(your sql here);    
@@ -135,16 +160,13 @@ while ($row = mysql_fetch_assoc($result)) {
 $json_data = json_encode($data);
 file_put_contents('your_json_file.json', $json_data);
 
-~~~
 Reference : 
 
 http://stackoverflow.com/questions/17317519/php-mysql-data-to-json-file
 
 ~~~
 
-xml to json 
-~~~
-php : 
+### xml to json  using php : 
 
 ~~~
 
@@ -162,50 +184,14 @@ class XmlToJson {
 }
 ?>
 
-~~~
 
 Reference : http://stackoverflow.com/questions/8830599/php-convert-xml-to-json
 
 ~~~
 
-python : 
-~~~
+### xml to json using python : 
+
 https://github.com/hay/xml2json/blob/master/xml2json.py
-~~~
 
 
-in general, a JSON expression is going to be 30% smaller than "equivalent" XML. 
-
-
-
-YAML To JSON : 
-
-
-Technically YAML is a superset of JSON. This means that, in theory at least, a YAML parser can understand JSON, but not necessarily the other way around.
-
-In general, there are certain features have  YAML that are not available in JSON.
-
-As @jdupont pointed out, YAML is visually easier to look at. In fact the YAML homepage is itself valid YAML, yet it is easy for a human to read.
-YAML has the ability to reference other items within a YAML file using "anchors." Thus it can handle relational information as one might find in a MySQL database.
-YAML is more robust about embedding other serialization formats such as JSON or XML within a YAML file.
-Right now, AJAX and other web technologies tend to use JSON. YAML is currently being used more for offline data processes.
-
-
-
-
-Using python  : 
-
-~~~
-import yaml
-import json
- 
-yml = """
----
-  foo: bar
-"""
-data = yaml.load(yml)
-json = json.dumps(data)
- 
-print(json)
-~~~
 
