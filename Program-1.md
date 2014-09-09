@@ -101,36 +101,61 @@ DB data as a single JSON string:
 Reference : 
 http://jugad2.blogspot.com/2014/03/database-to-json-in-python.html
 
-
+~~~
 php  
+~~~
 
+$result = mysql_query(your sql here);    
+$data = array();
+while ($row = mysql_fetch_assoc($result)) {
+    // Generate the output in desired format
+    $data = array(
+        'cols' => ....
+        'rows' => ....
+        'p' => ...
+    );
+}
+
+$json_data = json_encode($data);
+file_put_contents('your_json_file.json', $json_data);
+
+~~~
+Reference : 
 
 http://stackoverflow.com/questions/17317519/php-mysql-data-to-json-file
 
-
+~~~
 
 xml to json 
-
+~~~
 php : 
 
-http://stackoverflow.com/questions/8830599/php-convert-xml-to-json
-http://lostechies.com/seanbiefeld/2011/10/21/simple-xml-to-json-with-php/  
+~~~
 
+<?php   
+class XmlToJson {
+    public function Parse ($url) {
+        $fileContents= file_get_contents($url);
+        $fileContents = str_replace(array("\n", "\r", "\t"), '', $fileContents);
+        $fileContents = trim(str_replace('"', "'", $fileContents));
+        $simpleXml = simplexml_load_string($fileContents);
+        $json = json_encode($simpleXml);
 
-http://www.ibm.com/developerworks/library/x-xml2jsonphp/
+        return $json;
+    }
+}
+?>
 
+~~~
 
-perl : 
+Reference : http://stackoverflow.com/questions/8830599/php-convert-xml-to-json
 
-http://services.packetizer.com/code/xml2json/xml2json
-http://www.packetizer.com/xml/xml_to_json.html
-
+~~~
 
 python : 
-
-https://github.com/hay/xml2json
-
-
+~~~
+https://github.com/hay/xml2json/blob/master/xml2json.py
+~~~
 
 
 in general, a JSON expression is going to be 30% smaller than "equivalent" XML. 
