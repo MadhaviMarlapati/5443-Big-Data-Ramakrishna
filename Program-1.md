@@ -1,3 +1,5 @@
+# File Types & Importance  
+
 JSON has the advantage of super-easy parsing in JavaScript, though you'll probably have to find and introduce a library in other languages.
 
 XML has the advantage of more common usage across languages, useful for the storage you mention; and also valuable for passing around through different systems.
@@ -8,6 +10,10 @@ For small, lightweight apps author  personally think XML is overkill , author sa
 
 Reference : http://stackoverflow.com/questions/3951047/xml-vs-yaml-vs-json?rq=1
 
+# Why Python &  yam to json 
+I would like to choose python.I would like to  convert yml to json .
+Because Python is an easy to use language which has awesome libraries that work very well . 
+And   yml is light-weight and well-suited for hierarchical data representation, it also has a compact syntax for relational data
 
 ~~~ 
 
