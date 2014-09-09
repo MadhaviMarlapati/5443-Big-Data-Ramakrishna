@@ -194,4 +194,13 @@ Reference : http://stackoverflow.com/questions/8830599/php-convert-xml-to-json
 https://github.com/hay/xml2json/blob/master/xml2json.py
 
 
+# which of the files compresses the best using zip 
+
+Some types of files compress better than others. Some data files, such as text files, picture files in the BMP format, and certain text style database files can often be compressed by 90% or more. There are some other types of files, such as program files, that may compress by 50% or so.
+
+Other types of files often will not compress well. For example, most multimedia files will not, as they already exist in a highly compressed state.
+
+
+
+
 
