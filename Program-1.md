@@ -162,6 +162,31 @@ in general, a JSON expression is going to be 30% smaller than "equivalent" XML.
 
 
 
+YAML To JSON : 
 
+
+Technically YAML is a superset of JSON. This means that, in theory at least, a YAML parser can understand JSON, but not necessarily the other way around.
+
+In general, there are certain features have  YAML that are not available in JSON.
+
+As @jdupont pointed out, YAML is visually easier to look at. In fact the YAML homepage is itself valid YAML, yet it is easy for a human to read.
+YAML has the ability to reference other items within a YAML file using "anchors." Thus it can handle relational information as one might find in a MySQL database.
+YAML is more robust about embedding other serialization formats such as JSON or XML within a YAML file.
+Right now, AJAX and other web technologies tend to use JSON. YAML is currently being used more for offline data processes.
+
+
+
+
+Using python  : 
+
+
+import json
+import yaml
+ 
+str = '{ "foo": "bar" }'
+data = json.loads(str)
+yml = yaml.safe_dump(data)
+ 
+print(yml)
 
 
