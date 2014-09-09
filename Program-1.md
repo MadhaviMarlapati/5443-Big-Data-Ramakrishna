@@ -1,3 +1,13 @@
+JSON has the advantage of super-easy parsing in JavaScript, though you'll probably have to find and introduce a library in other languages.
+
+XML has the advantage of more common usage across languages, useful for the storage you mention; and also valuable for passing around through different systems.
+
+YAML has libraries for all languages, but is somewhat less commonly used, so you are more likely to have to find and introduce a library; whereas XML libraries are more commonly bundled, and JSON is automatically parseable in JavaScript.
+
+For small, lightweight apps author  personally think XML is overkill , author says that he  prefer YAML in that case. for interaction with javascript use json. If you truly need to define your own grammar (read: schema) then xml is it.
+
+Reference : http://stackoverflow.com/questions/3951047/xml-vs-yaml-vs-json?rq=1
+
 
 ~~~ 
 
