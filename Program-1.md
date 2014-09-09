@@ -1,4 +1,8 @@
+
+~~~ 
+
 csv to json python    :  
+~~~ 
 
 1 ) 
 import csv
@@ -17,21 +21,6 @@ for row in reader:
 	http://stackoverflow.com/questions/19697846/python-csv-to-json
 	
 	
-2 )  
-
-http://jaranto.blogspot.com/2012/12/transform-csv-file-to-json-file-with.html
-
-
-3 ) 
-
-http://ntare16.wordpress.com/2012/01/26/python-code-to-convert-csv-to-json/ 
-
-Java 
-
-1 ) http://www.studytrails.com/java/json/java-org-json.jsp  
-
-
-
 
 
 sql to json 
