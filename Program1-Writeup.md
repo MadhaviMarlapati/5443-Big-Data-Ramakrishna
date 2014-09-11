@@ -15,6 +15,20 @@ Right now, AJAX and other web technologies tend to use JSON. YAML is currently b
 
 
 
+# which of the files compresses the best using zip 
+
+Some types of files compress better than others. Some data files, such as text files, picture files in the BMP format, and certain text style database files can often be compressed by 90% or more. There are some other types of files, such as program files, that may compress by 50% or so.
+
+Other types of files often will not compress well. For example, most multimedia files will not, as they already exist in a highly compressed state.
+
+
+# which of the files compresses the best using gzip
+
+Gzip reduces the size of the named files using Lempel-Ziv coding (LZ77). Whenever possible, each file is replaced by one with the extension .gz, while keeping the same ownership modes, access and modification times. (The default extension is -gz for VMS, z for MSDOS, OS/2 FAT, Windows NT FAT and Atari.) If no files are specified, or if a file name is "-", the standard input is compressed to the standard output. Gzip will only attempt to compress regular files.
+
+
+
+
 
 # I would like to convert   yaml to json using python 
 
@@ -59,19 +73,6 @@ YAML has libraries for all languages, but is somewhat less commonly used, so you
 For small, lightweight apps author  personally think XML is overkill , author  says that he  prefer YAML in that case. If you truly need to define your own grammar (read: schema) then xml is it.
 
 Reference : http://stackoverflow.com/questions/3951047/xml-vs-yaml-vs-json?rq=1
-
-
-
-# which of the files compresses the best using zip 
-
-Some types of files compress better than others. Some data files, such as text files, picture files in the BMP format, and certain text style database files can often be compressed by 90% or more. There are some other types of files, such as program files, that may compress by 50% or so.
-
-Other types of files often will not compress well. For example, most multimedia files will not, as they already exist in a highly compressed state.
-
-
-# which of the files compresses the best using gzip
-
-Gzip reduces the size of the named files using Lempel-Ziv coding (LZ77). Whenever possible, each file is replaced by one with the extension .gz, while keeping the same ownership modes, access and modification times. (The default extension is -gz for VMS, z for MSDOS, OS/2 FAT, Windows NT FAT and Atari.) If no files are specified, or if a file name is "-", the standard input is compressed to the standard output. Gzip will only attempt to compress regular files.
 
 
 
