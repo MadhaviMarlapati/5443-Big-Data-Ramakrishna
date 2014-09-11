@@ -7,10 +7,7 @@
 * Technically YAML is a superset of JSON. This means that, in theory at least, a YAML parser can understand JSON, but not necessarily the other way around.
 * And   yml is light-weight and well-suited for hierarchical data representation, it also has a compact syntax for relational data
 
- In general, a JSON expression is going to be 30% smaller than "equivalent" XML. 
-
-
-* In general, there are certain features have  YAML that are not available in JSON.
+ In general, there are certain features have  YAML that are not available in JSON.
 
 * As @jdupont pointed out, YAML is visually easier to look at. In fact the YAML homepage is itself valid YAML, yet it is easy for a human to read.
 
@@ -18,7 +15,7 @@
 
 * YAML is more robust about embedding other serialization formats such as JSON or XML within a YAML file.                          
 * Right now, AJAX and other web technologies tend to use JSON. YAML is currently being used more for offline data processes.
-
+ In general, a JSON expression is going to be 30% smaller than "equivalent" XML. 
 
 # which of the files compresses the best using zip 
 
