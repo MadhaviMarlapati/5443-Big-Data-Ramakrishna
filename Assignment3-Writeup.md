@@ -4,7 +4,7 @@
 
 
 
-#### How do you add nodes to your Hadoop cluster  ? 
+####  1 )  How do you add nodes to your Hadoop cluster  ? 
 
 
 * First, add the new node's DNS name to the conf/slaves file on the master node.
@@ -20,17 +20,17 @@ If you are using the dfs.include/mapred.include functionality, you will need to 
 
 
 
-####  Can everyone in class add the remaining members of the class to thier cluster?
+#### 2 )   Can everyone in class add the remaining members of the class to thier cluster?
 
-    Yes 
+    Yes we can add. 
     
 ####  Can everyone simultaneously run thier own Hadoop cluster, AND be a slave (worker) in another Hadoop cluster?
 
   Yes  and  I agree with your statment (i.e  This would obviously never be ideal in the real world.)
   
 ####  can this work as a model in our BigData course? 
-
-  I read this article http://bradhedlund.com/2011/09/10/understanding-hadoop-clusters-and-the-network/  
+ 
+   I read this article http://bradhedlund.com/2011/09/10/understanding-hadoop-clusters-and-the-network/  
   and what i understood was 
   
   * Hadoop Cluster has Client machines , Master machines , Slave Machines. 
