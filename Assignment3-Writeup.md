@@ -7,9 +7,9 @@
 #### How do you add nodes to your Hadoop cluster  ? 
 
 
-First, add the new node's DNS name to the conf/slaves file on the master node.
+* First, add the new node's DNS name to the conf/slaves file on the master node.
 
-Then log in to the new slave node and execute:
+* Then log in to the new slave node and execute:
 
 
 $ cd path/to/hadoop
@@ -33,6 +33,6 @@ If you are using the dfs.include/mapred.include functionality, you will need to 
   I read this article http://bradhedlund.com/2011/09/10/understanding-hadoop-clusters-and-the-network/  
   and what i understood was 
   
-   Hadoop Cluster has Client machines , Master machines , Slave Machines. 
-  They perform their duties parallelly inorder  to do things very fast at large scale. 
-  I think some machines are dedicated as masters and some machines are dedicated as slaves in a hadoop cluster will give better results.
+  * Hadoop Cluster has Client machines , Master machines , Slave Machines. 
+   They perform their duties parallelly inorder  to do things very fast at large scale. 
+  * I think if we dedicate some machines   as masters and some machines  as slaves in a hadoop cluster will will get  better results and better performance .
