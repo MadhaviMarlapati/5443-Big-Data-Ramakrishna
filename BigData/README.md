@@ -1,12 +1,12 @@
 #Name
 
-## Ramakrishna Veeravalli 
+Ramakrishna Veeravalli 
 
 #Github Username
 
-## veeravallir
+veeravallir
 
 
 #Server IP
 
-##http://104.131.37.223
+http://104.131.37.223
