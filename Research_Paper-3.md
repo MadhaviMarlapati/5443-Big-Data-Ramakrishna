@@ -1,12 +1,12 @@
 # Title :  Dynamic Query Optimizers for   Big Data 
 
-### Big data query processing with multi store system 
+## Big data query processing with multi store system 
 -	How Hadoop works for  big data 
 -       Tune the physical design of multi store system (focusing on which store to place data) 
-### Novel paradigm for interactive learning queries on big data 
+## Novel paradigm for interactive learning queries on big data 
 -	Learning relational queries 
 -	Learning Graph Queries 
-### Dynamically optimizing queries over big data
+## Dynamically optimizing queries over big data
 -	 JAQL Overview 
 -        PILOT RUNS (tool used to collect the initial statistics of a query) 
                PILR Algorithm 
