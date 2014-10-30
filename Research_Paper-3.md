@@ -1,4 +1,10 @@
+
 # Title :  Dynamic Query Optimizers for   Big Data 
+
+
+##      I could have a paragraphs describing each of the outlined below
+
+
 
 ### Big data query processing with multi store system 
 	-	How Hadoop works for  big data 
