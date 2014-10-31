@@ -14,7 +14,7 @@ def is_json(myjson):
 #Link up with redis 
 r = redis.Redis(host='localhost', port=6379, db=0)
 
-f = open('./xaa.json','r')
+f = open('../nutrition_clean.json','r')
 writeupfile1 = open("nutirentIdSet.txt", "w")
 writeupfile2 = open("nutIdHash.txt", "w")
 writeupfile3 = open("nutTagnameSet.txt", "w")

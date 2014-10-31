@@ -37,14 +37,14 @@ for line in f:
 print 'GoodLines    '+ str(i)
 print j
 print k
-print i/k*100
+print i*j/100
 
 writeupfile.write('### Json File Processing\n')
 writeupfile.write('### Written by Your Name\n')
 writeupfile.write('- Total Lines Processed:  '+str(k)+'\n')
 writeupfile.write('- Good Lines Processed:   '+str(i)+'\n')
 writeupfile.write('- Bad Lines Processed:    '+str(j)+'\n')
-writeupfile.write('- Ratio of  Good Vs Bad   '+str((i/k)*100)+'\n')
+writeupfile.write('- Ratio of  Good Vs Bad   '+str((i*j)/100)+'\n')
 f.close()
 writeupfile.close()
 file.close()
