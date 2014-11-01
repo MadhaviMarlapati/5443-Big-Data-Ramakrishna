@@ -5,6 +5,13 @@ print r.hgetall('UniqueItems')
 
 I have to count the  unique top level  id's. hset is used and key as id .
  Then r.hgetall gives the number of unique food "items" in the file.
+
+
+ 
+ Output:
+
+Unique items: 8194
+
  
 # 2 How many unique nutrients are there?
 
@@ -28,6 +35,12 @@ In the inner loop where iterating nutrients ,  id 's of nutrients are
 stored into hashset as key. Then r.hgetall gives unique nutrient nutrients.
 
 
+
+Output:
+
+Unique nutrients: 148
+
+
 # 3 What are the top 5 most commonly occuring nutrient? 
 
 ~~~
@@ -46,12 +59,26 @@ print r.zrange('myset', 0, 5,desc=True)
 
 ~~~ 
 
+Output:
+
+Id's of the nutrients most occured 
+['1', '208', '205', '204', '203']
+
+1. 1 
+2. 208  
+3. 205
+4. 204
+5. 203 
+
+
 In the inner loop where iterating each nutrient ,
  r.zincrby increments the  count of the id.(Indirectly it is counting the number of times id is repeated).
  r.zrange('myset', 0, 5,desc=True) gives the top 5 most commonly occuring nutrients.
  
  
 # 4 
+
+ I tried to print the output on console. 
 
 # 5
 ~~~
