@@ -36,9 +36,9 @@ Query optimization is still an open challenge in big data, due to the volume and
 
 
 ####References: 
--[1]	Bonifati, A., Clucanu, R., Lemay, A., Staworko, S., A paradigm for learning queries on big data. Proceedings of DATA4U       '14 (September 2014, Hangzhou, Chaina), 7-12.
--[2]	Karanasos, K., Balmin, A., Kutsch, M., Ozcan, F., Ercegovac, V., Xia, C., Jackson, J.,             Dynamically               Optimizing     Queries over Large Scale Data Platforms. Proceedings of SIGMOD '14  (June 2014, UT, USA), 943-954.
--[3]	LeFerve, J., Snakaranarayanan, J., Hacigumus, H., Tatemura, J., Polyzotis, N., Carey, M., MISO: souping up big data          query     processing with a multistore system. Proceedings of SIGMOD '14 (June 2014, UT, USA), 1591-1602.
--[4]	Mishne, G., Dalton, J., Li, Z., Sharma, A., Lin, J., Fast data in the era of big data: Twitter's real-time related query      suggestion architecture.  Proceedings of SIGMOD '13 (June 2013, NY, USA), 1147-1158.
--[5]	Tran, N., Bodagala, S., Dave, J., Designing query optimizers for big data problems of the future. Proceedings of the         VLDB     Endowment (August 2013, Trento, Italy), 1168-1169.
+- [1]	Bonifati, A., Clucanu, R., Lemay, A., Staworko, S., A paradigm for learning queries on big data. Proceedings of DATA4U       '14 (September 2014, Hangzhou, Chaina), 7-12.
+- [2]	Karanasos, K., Balmin, A., Kutsch, M., Ozcan, F., Ercegovac, V., Xia, C., Jackson, J.,             Dynamically               Optimizing     Queries over Large Scale Data Platforms. Proceedings of SIGMOD '14  (June 2014, UT, USA), 943-954.
+- [3]	LeFerve, J., Snakaranarayanan, J., Hacigumus, H., Tatemura, J., Polyzotis, N., Carey, M., MISO: souping up big data          query     processing with a multistore system. Proceedings of SIGMOD '14 (June 2014, UT, USA), 1591-1602.
+- [4]	Mishne, G., Dalton, J., Li, Z., Sharma, A., Lin, J., Fast data in the era of big data: Twitter's real-time related           query      suggestion architecture.  Proceedings of SIGMOD '13 (June 2013, NY, USA), 1147-1158.
+- [5]	Tran, N., Bodagala, S., Dave, J., Designing query optimizers for big data problems of the future. Proceedings of the         VLDB     Endowment (August 2013, Trento, Italy), 1168-1169.
 
