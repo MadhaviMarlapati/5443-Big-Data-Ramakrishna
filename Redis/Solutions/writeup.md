@@ -111,23 +111,23 @@ I wrote the data to different files using the command like
  open("nutirentIdSet.txt", "w") . And "w" means it data will be written to the specified file . 
  For Each sub part in this question 5  i created a seperate file . 
 
-# 5.1    r.sadd('nutIdset', jsonline['_id']) 
+#### 5.1    r.sadd('nutIdset', jsonline['_id']) 
 		 stores  all id's for nutrients in a set and r.smembers gives the values in set. 
 
-# 5.2    r.hset('nutIdHash', jsonline['_id'], jsonline['tagname'])
+#### 5.2    r.hset('nutIdHash', jsonline['_id'], jsonline['tagname'])
 		stores all nutrients in a hash with thier id's as keys and r.hgetall gives 
 		all the fields and values in a hash 
 				
-# 5.3    r.sadd('nutTagset', jsonline['tagname']) 
+#### 5.3    r.sadd('nutTagset', jsonline['tagname']) 
 		stores all tagnames in a set and r.smembers gives the values in set and 
 		r.hgetall gives all the fields and values in a hash 
 
 
-# 5.4    r.hset('nutTagNameHash', jsonline['tagname'], jsonline['_id'])
+#### 5.4    r.hset('nutTagNameHash', jsonline['tagname'], jsonline['_id'])
 		stores all nutrients in a hash with tagnames as keys and 
 		r.hgetall gives all the fields and values in a hash 
 
-# 5.5    Store all nutrient id's in a list with the item id (top level _id) as the key.
+#### 5.5    Store all nutrient id's in a list with the item id (top level _id) as the key.
 	~~~
 	#all nutrient id's in a list 
 				r.rpush('nutIdList', jsonline['_id'])
